@@ -63,7 +63,7 @@ Should you ever decide to halt the recognition midway, rely on the handy stopRec
 ### Available Methods and Properties
 
 <details>
-  <summmary>📖 Table of all the methods and properties</summary>
+  <summary>📖 Table of all the methods and properties</summary>
 
   <table>
       <tr>
@@ -161,12 +161,8 @@ Should you ever decide to halt the recognition midway, rely on the handy stopRec
           <td>Obtains the status of continuous speech recognition.</td>
           <td>boolean</td>
       </tr>
-      <tr>
-          <td>destroy()</td>
-          <td>Deallocates memory consumed by speech recognition engine internals.</td>
-          <td>undefined</td>
-      </tr>
   </table>
+
 </details>
 
 ## Conclusion
