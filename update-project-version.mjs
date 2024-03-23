@@ -1,4 +1,5 @@
 import fs from "fs";
+import { exit } from "process";
 import readline from "readline";
 
 /**
@@ -71,6 +72,8 @@ function startScript() {
         updateVersion(answer.trim());
       } catch (error) {
         console.error(error.message);
+
+        process.exit();
       }
       rl.close();
     }
