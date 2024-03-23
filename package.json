@@ -1,6 +1,6 @@
 {
   "name": "@lephenix47/speech-to-text-utility",
-  "version": "1.4.0",
+  "version": "1.0.0",
   "description": "description",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -23,7 +23,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/LePhenix47/Text-to-speech-utility_npm-package.git"
+    "url": "git+https://github.com/LePhenix47/Speech-to-text-utility_npm-package.git"
   },
   "files": [
     "lib/**/*"
@@ -32,9 +32,9 @@
   "author": "Younes LAHOUITI",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/LePhenix47/Text-to-speech-utility_npm-package/issues"
+    "url": "https://github.com/LePhenix47/Speech-to-text-utility_npm-package/issues"
   },
-  "homepage": "https://github.com/LePhenix47/Text-to-speech-utility_npm-package#readme",
+  "homepage": "https://github.com/LePhenix47/Speech-to-text-utility_npm-package#readme",
   "devDependencies": {
     "ts-loader": "^9.4.3",
     "typescript": "^5.1.3"
