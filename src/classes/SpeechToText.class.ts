@@ -1,3 +1,24 @@
+/**
+ * Class representing a Speech to Text Utility for performing speech recognition operations.
+ *
+ * @example
+ * import { SpeechToText } from '@lephenix47/speech-to-text-utility';
+ *
+ * const speechToText = new SpeechToText();
+ * speechToText
+ *   .setLanguage('en-US')
+ *   .setInterimResults(true)
+ *   .setMaxAlternatives(5)
+ *   .setContinuous(true)
+ *   .setOnResult((sentence: string, isFinal: boolean) => {
+ *     if (isFinal) {
+ *       console.log(`Received Final Result: "${sentence}"`);
+ *     } else {
+ *       console.log(`Received Intermediate Result: "${sentence}"`);
+ *     }
+ *   })
+ *   .startRecognition();
+ */
 class SpeechToText {
   /**
    * The `SpeechRecognition` instance used for speech recognition.

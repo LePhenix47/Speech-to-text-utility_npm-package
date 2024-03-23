@@ -1,3 +1,1 @@
-export {} from "./classes";
-
-export {} from "./variables";
+export { default as SpeechToText } from "./classes/SpeechToText.class";
