@@ -1,0 +1,42 @@
+{
+  "name": "@lephenix47/speech-to-text-utility",
+  "version": "1.4.0",
+  "description": "description",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "exports": {
+    ".": "./lib/index.js"
+  },
+  "typesVersion": {
+    "*": {
+      "*": [
+        "types"
+      ]
+    }
+  },
+  "scripts": {
+    "ts-cmd": "rmdir /s /q  lib && tsc && tsc --build",
+    "ts-bash": "rm -rf ./ lib && tsc && tsc --build",
+    "publish": "npm publish --access=public",
+    "update-version": "node update-project-version.mjs && git add . && git commit -m \"Update on the project version\" && git push",
+    "push-lib": "(git diff --quiet || (echo 'You have uncommitted changes. Please commit your changes first.' && exit 1)) && npm run update-version && npm run publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LePhenix47/Text-to-speech-utility_npm-package.git"
+  },
+  "files": [
+    "lib/**/*"
+  ],
+  "keywords": [],
+  "author": "Younes LAHOUITI",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LePhenix47/Text-to-speech-utility_npm-package/issues"
+  },
+  "homepage": "https://github.com/LePhenix47/Text-to-speech-utility_npm-package#readme",
+  "devDependencies": {
+    "ts-loader": "^9.4.3",
+    "typescript": "^5.1.3"
+  }
+}

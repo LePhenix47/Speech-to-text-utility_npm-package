@@ -1,0 +1,33 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+# dependencies
+package-lock.json
+/node_modules
+/.pnp
+.pnp.js
+
+# git
+/.git
+
+# testing
+/coverage
+
+# misc
+.DS_Store
+*.pem
+.vscode
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# local env files
+.env*.local
+
+# VSCode
+.vscode
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts

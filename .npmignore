@@ -1,0 +1,33 @@
+# Development and build files
+node_modules/
+build/
+*.log
+*.md
+*.json
+*.ts
+*.tsx
+
+# Source control files
+.git
+.gitignore
+
+# IDE and editor files
+.vscode/
+.idea/
+*.sublime-*
+*.swp
+*.swo
+
+# Configuration files
+.npmrc
+tsconfig.json
+webpack.config.js
+
+# Test and example files
+test/
+examples/
+demo/
+
+# Must include files
+!lib/**/*.d.tsw
+!lib/**/*.js
