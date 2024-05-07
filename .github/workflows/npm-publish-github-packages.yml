@@ -10,26 +10,6 @@ on:
     types: [created]
 
 jobs:
-  ts-transpilation:
-    runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: ${{ github.workspace }}
-
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-
-      - name: Set up Node.js environment
-        uses: actions/setup-node@v4
-        with:
-          node-version: 20
-
-      - name: Install dependencies and transpile TypeScript
-        run: |
-          npm ci
-          npm run ts-bash
-
   publish-npm:
     runs-on: ubuntu-latest
 
@@ -37,22 +17,23 @@ jobs:
       run:
         working-directory: ${{ github.workspace }}
 
-    needs: [ts-transpilation]
-
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Set up Node.js environment
+      - name: Set up Node.js environment with NPM registry
         uses: actions/setup-node@v4
         with:
           node-version: 20
           registry-url: https://registry.npmjs.org/
 
-      - name: Publish library to NPM
+      - name: Install dependencies and transpile TypeScript
         run: |
           npm ci
-          npm run ts-bash
+          npm run ts
+
+      - name: Publish library to NPM
+        run: |
           npm publish --access=public
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
