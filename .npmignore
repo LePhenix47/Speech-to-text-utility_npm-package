@@ -22,11 +22,28 @@ build/
 .npmrc
 tsconfig.json
 webpack.config.js
+.github
 
 # Test and example files
 test/
 examples/
 demo/
+
+# CI/CD pipeline folders
+.github/
+.gitlab/
+.bitbucket/
+.jenkins/
+
+# Must include files
+!lib/**/*.d.ts
+!lib/**/*.js
+
+# CI/CD pipeline folders
+.github/
+.gitlab/
+.bitbucket/
+.jenkins/
 
 # Must include files
 !lib/**/*.d.tsw
